@@ -34,14 +34,14 @@ WIN_COMBINATIONS = [
           board[index] == "X"
         end
         )
-        return index_lst, "X";
+        return index_lst;
       end
       if(
         index_lst.all? do |index|
           board[index] == "O"
         end
         ) 
-        return index_lst, "O";
+        return index_lst;
       end
     end
     return false;
