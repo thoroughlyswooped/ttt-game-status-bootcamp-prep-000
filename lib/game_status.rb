@@ -62,6 +62,6 @@ WIN_COMBINATIONS = [
     if (draw?(board))
       return nil;
     else
-      return won?(board)[1];
+      return board[won?(board)[0]];
     end
   end
