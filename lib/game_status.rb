@@ -35,5 +35,9 @@ WIN_COMBINATIONS = [
         board[index] == "X"
       end
       
+      index_lst.all? do |index|
+        board[index] == "O"
+      end
+      
     end
   end
