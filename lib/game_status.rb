@@ -16,11 +16,11 @@ WIN_COMBINATIONS = [
   ]
   
   def won? (board) 
-    xboard = board.each_index.select do |index|
+    x_board = board.each_index.select do |index|
       board[index] == "X"
     end
     
-    oboard = board.each_index.select do |index|
+    o_board = board.each_index.select do |index|
       board[index] == "O"
     end
     
