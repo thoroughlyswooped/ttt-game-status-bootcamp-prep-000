@@ -52,3 +52,7 @@ WIN_COMBINATIONS = [
       position_taken?(board, index);
     end
   end
+  
+  def over? (board)
+    (draw?(board) || won?(board))
+  end
