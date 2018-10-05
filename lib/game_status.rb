@@ -15,6 +15,12 @@ WIN_COMBINATIONS = [
   [ 2, 4, 6],
   ]
   
+  def over(board)
+    #check if board is full
+    #check if board is won
+    
+  end
+  
   def won? (board) 
     # x_board = board.each_index.select do |index|
     #   board[index] == "X"
@@ -24,5 +30,7 @@ WIN_COMBINATIONS = [
     #   board[index] == "O"
     # end
     
-    
+    WIN_COMBINATIONS.each do |index_lst|
+      
+    end
   end
