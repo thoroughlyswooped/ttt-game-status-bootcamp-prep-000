@@ -31,13 +31,18 @@ WIN_COMBINATIONS = [
     # end
     
     WIN_COMBINATIONS.each do |index_lst|
+      if (
       index_lst.all? do |index|
         board[index] == "X"
       end
-      
+      )
+      return true;
+      if(
       index_lst.all? do |index|
         board[index] == "O"
       end
-      
+      ) 
+      return true;
     end
+    return false;
   end
