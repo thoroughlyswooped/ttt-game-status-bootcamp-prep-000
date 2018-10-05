@@ -43,7 +43,7 @@ WIN_COMBINATIONS = [
           board[index] == "O"
         end
         ) 
-        return true;
+        return index_lst;
       end
     end
     return false;
