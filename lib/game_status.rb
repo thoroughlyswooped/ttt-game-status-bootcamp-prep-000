@@ -31,6 +31,9 @@ WIN_COMBINATIONS = [
     # end
     
     WIN_COMBINATIONS.each do |index_lst|
+      index_lst.all? do |index|
+        board[index] == "X"
+      end
       
     end
   end
