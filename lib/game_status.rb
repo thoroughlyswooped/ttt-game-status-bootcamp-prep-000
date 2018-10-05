@@ -64,3 +64,4 @@ WIN_COMBINATIONS = [
     else
       return won?(board)[1];
     end
+  end
