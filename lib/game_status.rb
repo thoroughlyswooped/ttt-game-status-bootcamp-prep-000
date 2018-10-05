@@ -62,7 +62,7 @@ WIN_COMBINATIONS = [
   
   def winner (board)
     if (draw?(board))
-      return nil;
+      return "nil";
     else
       return board[won?(board)[0]];
     end
