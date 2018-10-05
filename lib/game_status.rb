@@ -19,4 +19,10 @@ WIN_COMBINATIONS = [
     xboard = board.each_index.select do |index|
       board[index] == "X"
     end
+    
+    oboard = board.each_index.select do |index|
+      board[index] == "O"
+    end
+    
+    
   end
