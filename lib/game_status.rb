@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   ]
   
   def over(board)
-    (full?(board) && !won?(board))
+    (full?(board) || won?(board))
   end
   
   def won? (board) 
