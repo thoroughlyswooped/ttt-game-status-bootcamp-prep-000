@@ -36,7 +36,7 @@ WIN_COMBINATIONS = [
           board[index] == "X"
         end
         )
-        return true;
+        return index_lst;
       end
       if(
         index_lst.all? do |index|
