@@ -34,14 +34,14 @@ WIN_COMBINATIONS = [
           board[index] == "X"
         end
         )
-        return index_lst;
+        return index_lst, "X";
       end
       if(
         index_lst.all? do |index|
           board[index] == "O"
         end
         ) 
-        return index_lst;
+        return index_lst, "O";
       end
     end
     return false;
@@ -57,3 +57,10 @@ WIN_COMBINATIONS = [
     (draw?(board) || won?(board))
     winner(board)
   end
+  
+  def winner (board)
+    if (draw?(board))
+      return nil;
+    else
+      return won?(board)[1];
+    end
