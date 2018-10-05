@@ -17,7 +17,9 @@ WIN_COMBINATIONS = [
   
   def over(board)
     #check if board is full
+    full?(board);
     #check if board is won
+    won?(board);
     
   end
   
