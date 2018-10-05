@@ -62,7 +62,6 @@ WIN_COMBINATIONS = [
   
   def winner (board)
     if (draw?(board))
-      console.log("nil");
       return;
     else
       return board[won?(board)[0]];
