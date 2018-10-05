@@ -50,7 +50,7 @@ WIN_COMBINATIONS = [
   end
   
   def full? (board)
-    board.each_index.none? do |index|
+    board.each_index.all? do |index|
       position_taken?(board, index);
     end
   end
